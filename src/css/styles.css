@@ -1,0 +1,27 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+  color: #ccc;
+  background-image: url('/assets/img/manhattan-skyline.jpg');
+  background-position: center center;
+  height: 600px;
+}
+
+.jumbotron header {
+  margin-top: 150px;
+}
+
+.nav > li > a {
+  color: #ccc;
+  border: 2px solid transparent;
+  border-radius: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+  color: #eee;
+  border-color: #eee;
+}
