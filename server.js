@@ -5,9 +5,13 @@ var app = express();
 
 app.use(compression());
 
-app.use('/', express.static(__dirname + '/src/html'));
+app.use('/assets/build', express.static(__dirname + '/build'));
 app.use('/assets', express.static(__dirname + '/src'));
 app.use('/vendor', express.static(__dirname + '/bower_components'));
+
+app.use('/', function(req, res, next) {
+  res.sendFile(__dirname + '/src/html/index.html');
+});
 
 var port = Number(process.env.PORT || 8060);
 app.listen(port);
