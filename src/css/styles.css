@@ -25,3 +25,15 @@ body {
   color: #eee;
   border-color: #eee;
 }
+
+footer.page-footer {
+  margin-top: 50px;
+}
+
+a .fa {
+  color: #222;
+}
+
+a:hover .fa {
+  color: #999;
+}
