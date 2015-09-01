@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "outDir": "build/",
+        "rootDir": "src/",
+        "sourceMap": true,
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
