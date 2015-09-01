@@ -1,3 +1,3 @@
 # personal-site
 
-See it in action [www.shu-song.com](here).
+See it in action [here](www.shu-song.com).
