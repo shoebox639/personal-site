@@ -1,23 +1,18 @@
 /// <reference path="../../typings/angular2/angular2.d.ts" />
 
 import {Component, View, bootstrap} from 'angular2/angular2';
+import {HeaderText} from 'header-text';
 
 @Component({
-  selector: 'header-text'
+  selector: 'app'
 })
 @View({
-  template: '<h1>{{name}}</h1>'
+  templateUrl: '/assets/html/app.html',
+  directives: [HeaderText]
 })
-class HeaderTextComponent {
-  name: string;
-
+class App {
   constructor() {
-    this.name = 'Shu Song';
-  }
-
-  get time() {
-    return new Date();
   }
 }
 
-bootstrap(HeaderTextComponent);
+bootstrap(App);

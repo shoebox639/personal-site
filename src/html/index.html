@@ -12,58 +12,16 @@
         <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
         <script src="https://jspm.io/system@0.16.js"></script>
         <script src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js"></script>
+        <script>
+            System.config({
+                baseURL: '/assets/build/ts'
+            });
+        </script>
 
     </head>
     <body>
-        <div class="jumbotron">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button class="nav navbar-toggle visible-xs-block">
-                            <span class="glyphicon glyphicon-menu-hamburger"></span>
-                        </button>
-                        <div class="navbar-brand">
-                            <strong>&lt;ss&gt;</strong>
-                        </div>
-                    </div>
-                    <ul class="nav navbar-nav hidden-xs navbar-right">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="/resume">Resume</a>
-                        </li>
-                        <li>
-                            <a href="/contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <header class="text-center">
-                <header-text></header-text>
-                <script>System.import('assets/build/ts/app');</script>
-                <h2>Building Software</h2>
-            </header>
-        </div>
-        <div class="container">
-            <div class="text-center">
-                This site is still a work in progress.
-            </div>
-        </div>
-
-        <footer class="page-footer text-center">
-            <a target="_blank" href="https://www.facebook.com/shu.song">
-                <span class="fa fa-2x fa-facebook-square"></span>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/pub/shu-song/17/2b6/7a6">
-                <span class="fa fa-2x fa-linkedin-square"></span>
-            </a>
-            <a target="_blank" href="https://twitter.com/shoebox639">
-                <span class="fa fa-2x fa-twitter-square"></span>
-            </a>
-            <a target="_blank" href="https://github.com/shoebox639">
-                <span class="fa fa-2x fa-github"></span>
-            </a>
-        </footer>
+        <app></app>
+        <script>System.import('app');</script>
+        
     </body>
 </html>
