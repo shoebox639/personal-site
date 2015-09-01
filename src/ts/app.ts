@@ -1,14 +1,14 @@
 /// <reference path="../../typings/angular2/angular2.d.ts" />
 
 import {Component, View, bootstrap} from 'angular2/angular2';
-import {HeaderText} from 'header-text';
+import {Header} from 'header';
 
 @Component({
   selector: 'app'
 })
 @View({
   templateUrl: '/assets/html/app.html',
-  directives: [HeaderText]
+  directives: [Header]
 })
 class App {
   constructor() {

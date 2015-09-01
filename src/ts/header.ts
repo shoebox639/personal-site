@@ -3,15 +3,12 @@
 import {Component, View, bootstrap} from 'angular2/angular2';
 
 @Component({
-  selector: 'header-text'
+  selector: 'app-header'
 })
 @View({
-  template: `
-    <h1>{{text}}</h1>
-    <h2>{{sub}}</h2>
-  `
+  templateUrl: '/assets/html/header.html'
 })
-export class HeaderText {
+export class Header {
   text: string;
   sub: string;
 
