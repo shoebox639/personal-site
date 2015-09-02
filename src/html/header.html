@@ -9,21 +9,24 @@
                     <strong>&lt;ss&gt;</strong>
                 </div>
             </div>
-            <ul class="nav navbar-nav hidden-xs navbar-right">
+            <ul class="nav navbar-nav navbar-right hidden-xs">
                 <li>
-                    <a href="/">Home</a>
+                    <a [router-link]="['/home']">Home</a>
                 </li>
                 <li>
-                    <a href="/resume">Resume</a>
+                    <a [router-link]="['/about']">About</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a [router-link]="['/resume']">Resume</a>
+                </li>
+                <li>
+                    <a [router-link]="['/contact']">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <header class="text-center">
-        <h1>{{text}}</h1>
-        <h2>{{sub}}</h2>
+        <h1>{{pageTitleSerivce.title}}</h1>
+        <h2>{{pageTitleSerivce.subTitle}}</h2>
     </header>
 </div>

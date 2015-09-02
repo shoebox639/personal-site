@@ -9,8 +9,21 @@ app.use('/assets/build', express.static(__dirname + '/build'));
 app.use('/assets', express.static(__dirname + '/src'));
 app.use('/vendor', express.static(__dirname + '/bower_components'));
 
-app.get('/', function(req, res, next) {
-  res.sendFile(__dirname + '/src/html/index.html');
+var validPaths = ['about', 'resume', 'contact'];
+
+app.get('/:path?', function(req, res, next) {
+  var path = req.params.path;
+  if (!path || validPaths.indexOf(path) > -1) {
+    res.sendFile(__dirname + '/src/html/index.html');
+  }
+  else {
+    next();
+  }
+});
+
+app.use(function(req, res, next) {
+  res.status(404);
+  res.send('Page not found');
 });
 
 var port = Number(process.env.PORT || 8060);
