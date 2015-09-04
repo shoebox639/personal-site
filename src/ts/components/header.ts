@@ -5,17 +5,28 @@ import {RouterLink} from 'angular2/router';
 
 import {PageTitleService} from '../services/page-title-service';
 
+import {NavLink} from '../directives/nav-link';
+
 @Component({
   selector: 'app-header'
 })
 @View({
-  directives: [RouterLink],
+  directives: [RouterLink, NavLink],
   templateUrl: '/assets/html/header.html'
 })
 
 export class Header {
-  pageTitleSerivce: PageTitleService;
+  private pageTitleSerivce: PageTitleService;
+  
   constructor(pageTitleService: PageTitleService) {
     this.pageTitleSerivce = pageTitleService;
+  }
+  
+  get title() {
+    return this.pageTitleSerivce.title;
+  }
+  
+  get subTitle() {
+    return this.pageTitleSerivce.subTitle;
   }
 }

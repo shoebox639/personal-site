@@ -1,32 +1,30 @@
 <div class="jumbotron">
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button class="nav navbar-toggle visible-xs-block">
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </button>
-                <div class="navbar-brand">
-                    <strong>&lt;ss&gt;</strong>
-                </div>
-            </div>
-            <ul class="nav navbar-nav navbar-right hidden-xs">
-                <li>
-                    <a [router-link]="['/home']">Home</a>
-                </li>
-                <li>
-                    <a [router-link]="['/about']">About</a>
-                </li>
-                <li>
-                    <a [router-link]="['/resume']">Resume</a>
-                </li>
-                <li>
-                    <a [router-link]="['/contact']">Contact</a>
-                </li>
-            </ul>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="nav navbar-toggle visible-xs-block">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <div class="navbar-brand">
+          <strong>&lt;ss&gt;</strong>
         </div>
-    </nav>
-    <header class="text-center">
-        <h1>{{pageTitleSerivce.title}}</h1>
-        <h2>{{pageTitleSerivce.subTitle}}</h2>
-    </header>
+      </div>
+      <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li nav-link route="home">Home</li>
+        <li>
+          <a [router-link]="['/about']">About</a>
+        </li>
+        <li>
+          <a [router-link]="['/resume']">Resume</a>
+        </li>
+        <li>
+          <a [router-link]="['/contact']">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="text-center">
+    <h1>{{title}}</h1>
+    <h2>{{subTitle}}</h2>
+  </header>
 </div>

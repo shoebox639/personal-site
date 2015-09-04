@@ -4,25 +4,27 @@
 
         <title>Shu Song, Software Engineer</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet" type="text/css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
 
-        <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
-        <script src="https://jspm.io/system@0.16.js"></script>
-        <script src="https://code.angularjs.org/2.0.0-alpha.35/angular2.dev.js"></script>
-        <script src="https://code.angularjs.org/2.0.0-alpha.35/router.dev.js"></script>
+        <script src="http://cdn.rawgit.com/google/traceur-compiler/90da568c7aa8e53ea362db1fc211fbb4f65b5e94/bin/traceur-runtime.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/systemjs/0.18.4/system.src.js"></script>
+        <script>
+          System.config({
+            defaultJSExtensions: true 
+          });
+        </script>
+        <script src="https://code.angularjs.org/2.0.0-alpha.36/angular2.dev.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-alpha.36/router.dev.js"></script>
         
         <base href="/"></base>
     </head>
     <body>
         <app></app>
         <script>
-            System.config({
-                baseURL: '/assets/build/ts'
-            });
-            System.import('bootstrap');
+            System.import('/assets/build/ts/bootstrap');
         </script>
         
     </body>
