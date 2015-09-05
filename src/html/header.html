@@ -2,9 +2,18 @@
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button class="nav navbar-toggle visible-xs-block">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
+        <dropdown class="dropdown pull-right">
+          <button dropdown-button class="nav navbar-toggle visible-xs-block">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <ul dropdown-menu class="dropdown-menu">
+            <li nav-link route="home">Home</li>
+            <li nav-link route="about">About</li>
+            <li nav-link route="resume">Resume</li>
+            <li nav-link route="contact">Contact</li>
+          </ul>
+        </dropdown>
+        
         <div class="navbar-brand">
           <strong>&lt;ss&gt;</strong>
         </div>

@@ -6,12 +6,13 @@ import {RouterLink} from 'angular2/router';
 import {PageTitleService} from '../services/page-title-service';
 
 import {NavLink} from '../directives/nav-link';
+import {Dropdown} from '../directives/dropdown';
 
 @Component({
   selector: 'app-header'
 })
 @View({
-  directives: [RouterLink, NavLink],
+  directives: [RouterLink, NavLink, Dropdown],
   templateUrl: '/assets/html/header.html'
 })
 
