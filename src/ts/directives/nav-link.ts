@@ -2,7 +2,11 @@
 
 import {Component, View, Attribute, NgClass} from 'angular2/angular2';
 
-import {RouterLink} from 'angular2/router';
+import {RouterLink, Router} from 'angular2/router';
+
+import {App} from '../components/app';
+
+import {NavService} from '../services/nav-service';
 
 @Component({
   selector: '[nav-link]',
@@ -13,24 +17,25 @@ import {RouterLink} from 'angular2/router';
 @View({
   directives: [RouterLink, NgClass],
   template: `
-    <a [router-link]="['/home']" [ng-class]="classMap">
+    <a [router-link]="routeParam" [ng-class]="classMap">
       <ng-content></ng-content>
     </a>
   `
 })
 export class NavLink {
-  route: string
-  
   constructor(
-    @Attribute('route') route: string
+    private navService: NavService,
+    @Attribute('route') private route: string
   ) {
-    this.route = route;
-    // console.log(currRouter);
+  }
+  
+  get routeParam() {
+    return [`/${this.route}`];
   }
   
   get classMap() {
     return {
-      active: true
+      active: this.route === this.navService.currRoute
     }
   }
 }

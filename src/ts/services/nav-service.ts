@@ -1,8 +1,7 @@
 /// <reference path="../../../typings/tsd.d.ts" />
 
-export class PageTitleService {
-  title: string;
-  subTitle: string;
+export class NavService {
+  currRoute: string;
   constructor() {
   }
 }
