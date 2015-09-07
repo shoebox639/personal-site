@@ -10,22 +10,32 @@ import {Component, Directive, View, Host} from 'angular2/angular2';
     <div (^click)="toggle()">
       <ng-content select="[dropdown-button]"></ng-content>
     </div>
-    <div [hidden]="!visible" (^click)="reset()">
+    <div [hidden]="!menuVisible" (^click)="reset()">
       <ng-content select="[dropdown-menu]"></ng-content>
     </div>
   `
 })
 export class Dropdown {
-  visible: boolean;
+  menuVisible: boolean;
+  private toggleInProgress: boolean;
   
   constructor() {
+    var listener = (ev) => {
+      if (!this.toggleInProgress) {
+        this.reset();
+      }
+      this.toggleInProgress = false;
+      return true;
+    };
+    document.querySelector('body').addEventListener("touchend", listener); 
   }
   
   toggle() {
-    this.visible = !this.visible;
+    this.toggleInProgress = true;
+    this.menuVisible = !this.menuVisible;
   }
   
   reset() {
-    this.visible = false;
+    this.menuVisible = false;
   }
 }
