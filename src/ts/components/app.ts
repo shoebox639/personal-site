@@ -6,7 +6,7 @@ import {RouteConfig} from 'angular2/router';
 import {Header} from './header';
 import {Body} from './body';
 import {Footer} from './footer';
-import {AboutView} from './pages/about';
+import {ResumeView} from './pages/resume';
 import {HomeView} from './pages/home';
 
 @Component({
@@ -18,8 +18,7 @@ import {HomeView} from './pages/home';
 })
 @RouteConfig([
   { path: '/',        as: 'home',    component: HomeView },
-  { path: '/about',   as: 'about',   component: AboutView },
-  { path: '/resume',  as: 'resume',  component: Body },
+  { path: '/resume',  as: 'resume',  component: ResumeView },
   { path: '/contact', as: 'contact', component: Body }
 ])
 export class App {

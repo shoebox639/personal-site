@@ -9,14 +9,14 @@ import {NavService} from '../../services/nav-service';
   selector: 'about-view'
 })
 @View({
-  templateUrl: '/assets/html/pages/about.html'
+  templateUrl: '/assets/html/pages/resume.html'
 })
-export class AboutView {
+export class ResumeView {
   constructor(pageTitleService: PageTitleService, navService: NavService) {
-    pageTitleService.title = 'A little about me';
+    pageTitleService.title = 'My Resume';
     pageTitleService.subTitle = '';
     
-    navService.currRoute = 'about';
+    navService.currRoute = 'resume';
   }
 }
 
