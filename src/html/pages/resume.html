@@ -1,1 +1,36 @@
-This is the resume page.
+<resume-section>
+  <resume-section-header>Skills</resume-section-header>
+  <resume-subsection *ng-for="#category of skillCategories">
+    <resume-subsection-header>
+      {{category.name}}
+    </resume-subsection-header>
+    <p>
+      <span class="skill" *ng-for="#skill of category.skills; #i=index">
+        {{skill}}
+      </span>
+    </p>
+  </resume-subsection>
+</resume-section>
+<resume-section>
+  <resume-section-header>Experience</resume-section-header>
+  <resume-subsection *ng-for="#job of jobs">
+    <resume-subsection-header>
+      {{job.company}}
+      <small>{{job.position}}</small>
+    </resume-subsection-header>
+    <resume-subsection-subheader>
+      {{job.location}} | {{job.period}}
+    </resume-subsection-subheader>
+    <p *ng-for="#accomplishment of job.accomplishments">
+      {{accomplishment}}
+    </p>
+  </resume-subsection>
+</resume-section>
+<resume-section>
+  <resume-section-header>Education</resume-section-header>
+  <h3>Cornell University</h3>
+  <h5>Ithaca, NY 2005 - 2009</h5>
+  <p>
+    Bachelors of Science: Computer Science
+  </p>
+</resume-section>

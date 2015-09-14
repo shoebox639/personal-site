@@ -1,12 +1,18 @@
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 .jumbotron {
   color: #ccc;
-  background-image: url('/assets/img/manhattan-skyline.jpg');
-  background-position: center center;
+  background-image: url('/assets/img/manhattan-skyline-cropped.jpg');
+  background-position: center bottom;
   height: 600px;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+  font-weight: 300;
 }
 
 .jumbotron header {
@@ -34,28 +40,6 @@ body {
   background-color: transparent;
   color: #eee;
   border: 2px #eee solid;
-}
-
-footer.page-footer {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-a .fa {
-  color: #222;
-}
-
-a:hover .fa {
-  color: #999;
-}
-
-a,
-a .fa {
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
-  transition:.2s;
 }
 
 .navbar .dropdown-menu {
@@ -92,6 +76,38 @@ a .fa {
   color: #222;
 }
 
+footer.page-footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a .fa {
+  color: #222;
+}
+
+a:hover .fa {
+  color: #999;
+}
+
+a,
+a .fa {
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+}
+
 section {
   margin-bottom: 75px;
+}
+
+.skill::after {
+  content: ',';
+  margin-left: -3px;
+}
+
+.skill:last-child:after {
+  content: none;
+  margin-left: 0;
 }
