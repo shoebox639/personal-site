@@ -16,20 +16,12 @@ export var jobs: List<Job> = [
     'New York, NY',
     'October 2010 - present',
     [
-      `Implementing new front end architecture that easily shares web 
-      components and communicates with the backend using a REST API.`,
-      
-      `Instrumental is the creation of Centermark, a single page web 
-      application using Play and Angular that gives Franchisors 
-      insight into their Franchisees' advertising engagement.`,
-      
+      `Implementing new front end architecture that easily shares web components and communicates with the backend using a REST API.`,
+      `Instrumental in the creation of Centermark, a single page web application that gives Franchisors insight into their Franchisees' advertising engagement.`,
+      `Implemented aggregation pipelines to speed up slow queries.`,
       `Built and maintained an Angular component library with self-documenting website.`,
-      
-      `Built a commission system and web application that calculated and 
-      tracked commissions for our sales reps in real time.`,
-      
+      `Built a commission system and web application that calculated and tracked commissions for our sales reps in real time.`,
       `Trained new engineers on Test Driven Design.`,
-      
       `Gave talks on front end programming best practices.`
     ]
   ),
@@ -58,22 +50,18 @@ export class SkillCategory {
 export var skillCategories: List<SkillCategory> = [
   new SkillCategory(
     'Languages',
-    ['Java', 'JavaScript', 'Scala', 'ES6', 'TypeScript', 'Ruby']
+    ['Java', 'JavaScript', 'Scala', 'Ruby', 'HTML', 'CSS3', 'ES6', 'TypeScript']
   ),
   new SkillCategory(
-    'Front End Technologies',
-    ['Angular 1', 'jQuery', 'Angular 2']
+    'Front End',
+    ['Angular 1', 'RequireJs', 'jQuery', 'Express', 'UI Bootstrap', 'Rails', 'Angular 2']
   ),
   new SkillCategory(
-    'Back End Technologies',
-    ['Spring', 'Node', 'Express', 'Play Framework', 'Thrift', 'Hadoop', 'Rails']
+    'Backend End',
+    ['Node', 'CommonJs', 'Spring', 'Play Framework', 'Thrift', 'Hadoop', 'Scalding', 'Hibernate']
   ),
   new SkillCategory(
     'Database',
     ['Postgres', 'HBase', 'Oracle', 'MySQL', 'MongoDB']
-  ),
-  new SkillCategory(
-    'AWS',
-    ['S3', 'EC2', 'EMR']
-  ),
+  )
 ]

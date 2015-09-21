@@ -101,13 +101,3 @@ a .fa {
 section {
   margin-bottom: 75px;
 }
-
-.skill::after {
-  content: ',';
-  margin-left: -3px;
-}
-
-.skill:last-child:after {
-  content: none;
-  margin-left: 0;
-}

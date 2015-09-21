@@ -1,12 +1,10 @@
 <resume-section>
   <resume-section-header>Skills</resume-section-header>
   <resume-subsection *ng-for="#category of skillCategories">
-    <resume-subsection-header>
-      {{category.name}}
-    </resume-subsection-header>
+    <resume-subsection-header> {{category.name}} </resume-subsection-header>
     <p>
-      <span class="skill" *ng-for="#skill of category.skills; #i=index">
-        {{skill}}
+      <span *ng-for="#skill of category.skills; #i=index">
+        {{skill}}<span [hidden]="i >= category.skills.length - 1">,</span>
       </span>
     </p>
   </resume-subsection>
@@ -14,13 +12,8 @@
 <resume-section>
   <resume-section-header>Experience</resume-section-header>
   <resume-subsection *ng-for="#job of jobs">
-    <resume-subsection-header>
-      {{job.company}}
-      <small>{{job.position}}</small>
-    </resume-subsection-header>
-    <resume-subsection-subheader>
-      {{job.location}} | {{job.period}}
-    </resume-subsection-subheader>
+    <resume-subsection-header> {{job.company}} <small>{{job.position}}</small> </resume-subsection-header>
+    <resume-subsection-subheader> {{job.location}} | {{job.period}} </resume-subsection-subheader>
     <p *ng-for="#accomplishment of job.accomplishments">
       {{accomplishment}}
     </p>
