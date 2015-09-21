@@ -17,12 +17,13 @@ export var jobs: List<Job> = [
     'October 2010 - present',
     [
       `Implementing new front end architecture that easily shares web components and communicates with the backend using a REST API.`,
+      `Established front end programming best practices as part of front end guild.`,
       `Instrumental in the creation of Centermark, a single page web application that gives Franchisors insight into their Franchisees' advertising engagement.`,
       `Implemented aggregation pipelines to speed up slow queries.`,
       `Built and maintained an Angular component library with self-documenting website.`,
       `Built a commission system and web application that calculated and tracked commissions for our sales reps in real time.`,
       `Trained new engineers on Test Driven Design.`,
-      `Gave talks on front end programming best practices.`
+      `Gave internal talks on Angular development.`
     ]
   ),
   new Job(
@@ -54,7 +55,7 @@ export var skillCategories: List<SkillCategory> = [
   ),
   new SkillCategory(
     'Front End',
-    ['Angular 1', 'RequireJs', 'jQuery', 'Express', 'UI Bootstrap', 'Rails', 'Angular 2']
+    ['Angular', 'RequireJs', 'jQuery', 'Express', 'UI Bootstrap', 'Rails']
   ),
   new SkillCategory(
     'Backend End',
