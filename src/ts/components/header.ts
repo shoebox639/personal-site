@@ -16,17 +16,18 @@ import {Dropdown} from '../directives/dropdown';
   templateUrl: '/assets/html/header.html'
 })
 export class Header {
-  private pageTitleSerivce: PageTitleService;
-  
-  constructor(pageTitleService: PageTitleService) {
-    this.pageTitleSerivce = pageTitleService;
+  constructor(private pageTitleService: PageTitleService) {
   }
   
   get title() {
-    return this.pageTitleSerivce.title;
+    return this.pageTitleService.title;
   }
   
   get subTitle() {
-    return this.pageTitleSerivce.subTitle;
+    return this.pageTitleService.subTitle;
+  }
+
+  get background() {
+    return this.pageTitleService.background;
   }
 }

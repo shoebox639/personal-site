@@ -3,21 +3,51 @@ body {
   font-weight: 300;
 }
 
-.jumbotron {
-  color: #ccc;
-  background-image: url('/assets/img/manhattan-skyline-cropped.jpg');
-  background-position: center bottom;
-  height: 600px;
+.app-header {
+  background-color: #222;
 }
 
-.jumbotron h1,
-.jumbotron h2 {
-  font-weight: 300;
+.jumbotron {
+  color: #ccc;
+  background-color: #222;
+  background-position: center bottom;
+  background-size: cover;
+  height: 600px;
+  -o-transition: background .5s ease-in-out;
+  -ms-transition: background .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out;
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
+}
+.jumbotron.home {
+  background-image: url('/assets/img/manhattan-skyline.jpg');
+}
+.jumbotron.resume {
+  background-image: url('/assets/img/lines-of-code.jpg');
 }
 
 .jumbotron header {
   margin-top: 150px;
 }
+@media(max-width: 768px) {
+  .jumbotron {
+    height: 400px;
+  }
+  .jumbotron header {
+    margin-top: 75px;
+  }
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+  font-weight: 300;
+  -o-transition:.5s ease-in-out;
+  -ms-transition:.5s ease-in-out;
+  -moz-transition:.5s ease-in-out;
+  -webkit-transition:.5s ease-in-out;
+  transition:.5s ease-in-out;
+}
+
 
 .nav > li > a {
   color: #ccc;

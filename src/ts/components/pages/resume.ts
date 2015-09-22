@@ -34,8 +34,9 @@ export class ResumeView {
   constructor(pageTitleService: PageTitleService) {
     pageTitleService.title = 'My Resume';
     pageTitleService.subTitle = ``;
+    pageTitleService.background = 'resume';
   }
-  
+
   get jobs() {
     return jobs;
   }

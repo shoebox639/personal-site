@@ -14,6 +14,7 @@ export class HomeView {
   constructor(pageTitleService: PageTitleService) {
     pageTitleService.title = 'Shu Song';
     pageTitleService.subTitle = 'Building Software';
+    pageTitleService.background = 'home';
   }
 }
 

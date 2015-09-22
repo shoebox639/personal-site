@@ -3,6 +3,7 @@
 export class PageTitleService {
   title: string;
   subTitle: string;
+  background: string;
   constructor() {
   }
 }
