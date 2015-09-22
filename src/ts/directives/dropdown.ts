@@ -10,7 +10,7 @@ import {Component, Directive, View, Host} from 'angular2/angular2';
     <div (click)="toggle()">
       <ng-content select="[dropdown-button]"></ng-content>
     </div>
-    <div [hidden]="!menuVisible" (^click)="reset()">
+    <div [hidden]="!menuVisible" (click)="reset()">
       <ng-content select="[dropdown-menu]"></ng-content>
     </div>
   `
