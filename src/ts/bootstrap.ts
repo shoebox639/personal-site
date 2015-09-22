@@ -5,7 +5,6 @@ import {RouteRegistry, Pipeline, Router, RootRouter, Location, LocationStrategy,
 
 import {App} from './components/app';
 import {PageTitleService} from './services/page-title-service'
-import {NavService} from './services/nav-service'
 
 let routerInjectables = [
   RouteRegistry, 
@@ -19,4 +18,4 @@ let routerInjectables = [
 
 
 
-bootstrap(App, [routerInjectables, PageTitleService, NavService]);
+bootstrap(App, [routerInjectables, PageTitleService]);
