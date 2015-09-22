@@ -12,8 +12,8 @@
 <resume-section>
   <resume-section-header>Experience</resume-section-header>
   <resume-subsection *ng-for="#job of jobs">
-    <resume-subsection-header> {{job.company}} <small>{{job.position}}</small> </resume-subsection-header>
-    <resume-subsection-subheader> {{job.location}} | {{job.period}} </resume-subsection-subheader>
+    <resume-subsection-header> {{job.company}} <small>{{job.location}}</small> </resume-subsection-header>
+    <resume-subsection-subheader>{{job.position}}, {{job.period}} </resume-subsection-subheader>
     <p *ng-for="#accomplishment of job.accomplishments">
       {{accomplishment}}
     </p>

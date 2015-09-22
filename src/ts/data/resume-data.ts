@@ -14,16 +14,32 @@ export var jobs: List<Job> = [
     'Yodle',
     'Lead Software Engineer',
     'New York, NY',
-    'October 2010 - present',
+    'June 2015 - present',
     [
       `Implementing new front end architecture that easily shares web components and communicates with the backend using a REST API.`,
       `Established front end programming best practices as part of front end guild.`,
-      `Instrumental in the creation of Centermark, a single page web application that gives Franchisors insight into their Franchisees' advertising engagement.`,
-      `Implemented aggregation pipelines to speed up slow queries.`,
+    ]
+  ),
+  new Job(
+    '',
+    'Senior Software Engineer',
+    '',
+    'April 2014 - June 2015',
+    [
       `Built and maintained an Angular component library with self-documenting website.`,
-      `Built a commission system and web application that calculated and tracked commissions for our sales reps in real time.`,
       `Trained new engineers on Test Driven Design.`,
       `Gave internal talks on Angular development.`
+    ]
+  ),
+  new Job(
+    '',
+    'Software Engineer',
+    '',
+    'October 2010 - April 2014',
+    [
+      `Instrumental in the creation of Centermark, a single page web application that gives Franchisors insight into their Franchisees' advertising engagement.`,
+      `Implemented aggregation pipelines to speed up slow queries.`,
+      `Built a web application to calculate and track sales rep commissions in real time.`,
     ]
   ),
   new Job(
@@ -59,11 +75,11 @@ export var skillCategories: List<SkillCategory> = [
   ),
   new SkillCategory(
     'Backend End',
-    ['Node', 'CommonJs', 'Spring', 'Play Framework', 'Gulp', 'SBT', 'Thrift', 'Hadoop', 'Scalding', 'Hibernate', 'Spring Boot', 'Spring MVC']
+    ['Node', 'CommonJs', 'Spring', 'Play Framework', 'JSP', 'Gulp', 'SBT', 'Thrift', 'Hadoop', 'Scalding', 'Hibernate', 'Spring Boot', 'Spring MVC']
   ),
   new SkillCategory(
     'Testing',
-    ['jUnit', 'Jasmine', 'Karma', 'Selenium', 'qUnit']
+    ['JUnit', 'Jasmine', 'Karma', 'Selenium', 'QUnit', 'Protractor']
   ),
   new SkillCategory(
     'Database',
