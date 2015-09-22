@@ -4,12 +4,12 @@ export class Job {
     public position: string,
     public location: string,
     public period: string,
-    public accomplishments: List<string>
+    public accomplishments: string[]
   ){
   }
 }
 
-export var jobs: List<Job> = [
+export var jobs: Job[] = [
   new Job(
     'Yodle',
     'Lead Software Engineer',
@@ -59,12 +59,12 @@ export var jobs: List<Job> = [
 export class SkillCategory {
   constructor(
     public name: string, 
-    public skills: List<String>
+    public skills: String[]
   ) {
   }
 }
 
-export var skillCategories: List<SkillCategory> = [
+export var skillCategories: SkillCategory[] = [
   new SkillCategory(
     'Languages',
     ['Java', 'JavaScript', 'Scala', 'Ruby', 'HTML', 'CSS3', 'ES6', 'TypeScript']
