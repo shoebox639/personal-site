@@ -7,7 +7,7 @@ import {Component, Directive, View, Host} from 'angular2/angular2';
 })
 @View({
   template: `
-    <div (^click)="toggle()">
+    <div (click)="toggle()">
       <ng-content select="[dropdown-button]"></ng-content>
     </div>
     <div [hidden]="!menuVisible" (^click)="reset()">

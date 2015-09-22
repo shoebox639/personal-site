@@ -17,7 +17,7 @@ import {NavService} from '../services/nav-service';
 @View({
   directives: [RouterLink, NgClass],
   template: `
-    <a [router-link]="routeParam" [ng-class]="classMap">
+    <a [router-link]="routeParam">
       <ng-content></ng-content>
     </a>
   `

@@ -70,11 +70,11 @@ export var skillCategories: SkillCategory[] = [
     ['Java', 'JavaScript', 'Scala', 'Ruby', 'HTML', 'CSS3', 'ES6', 'TypeScript']
   ),
   new SkillCategory(
-    'Front End',
+    'Frontend',
     ['Angular', 'RequireJs', 'jQuery', 'Express', 'Bootstrap', 'UI Bootstrap', 'Rails']
   ),
   new SkillCategory(
-    'Backend End',
+    'Backend',
     ['Node', 'CommonJs', 'Spring', 'Play Framework', 'JSP', 'Gulp', 'SBT', 'Thrift', 'Hadoop', 'Scalding', 'Hibernate', 'Spring Boot', 'Spring MVC']
   ),
   new SkillCategory(
