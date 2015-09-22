@@ -15,7 +15,6 @@ import {Dropdown} from '../directives/dropdown';
   directives: [RouterLink, NavLink, Dropdown],
   templateUrl: '/assets/html/header.html'
 })
-
 export class Header {
   private pageTitleSerivce: PageTitleService;
   

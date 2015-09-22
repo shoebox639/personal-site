@@ -2,7 +2,7 @@
 
 import {Component, View} from 'angular2/angular2';
 
-import {RouterOutlet} from 'angular2/router';
+import {RouterOutlet, RouteConfig} from 'angular2/router';
 
 @Component({
   selector: 'app-body'

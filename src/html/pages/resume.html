@@ -5,6 +5,9 @@
   <div>+1 607 351 2408</div>
 </div>
 
+<div class="row hidden-print">
+  <resume-print class="pull-right"></resume-print>
+</div>
 <resume-section>
   <resume-section-header>Skills</resume-section-header>
   <resume-subsection *ng-for="#category of skillCategories">
@@ -16,6 +19,7 @@
     </p>
   </resume-subsection>
 </resume-section>
+
 <resume-section>
   <resume-section-header>Experience</resume-section-header>
   <resume-subsection *ng-for="#job of jobs">
@@ -28,6 +32,7 @@
     </p>
   </resume-subsection>
 </resume-section>
+
 <resume-section>
   <resume-section-header>Education</resume-section-header>
   <resume-subsection>
