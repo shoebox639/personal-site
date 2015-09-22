@@ -12,7 +12,9 @@
 <resume-section>
   <resume-section-header>Experience</resume-section-header>
   <resume-subsection *ng-for="#job of jobs">
-    <resume-subsection-header> {{job.company}} <small>{{job.location}}</small> </resume-subsection-header>
+    <resume-subsection-header>
+      {{job.company}} <small>{{job.location}}</small>
+    </resume-subsection-header>
     <resume-subsection-subheader>{{job.position}}, {{job.period}} </resume-subsection-subheader>
     <p *ng-for="#accomplishment of job.accomplishments">
       {{accomplishment}}
@@ -21,9 +23,13 @@
 </resume-section>
 <resume-section>
   <resume-section-header>Education</resume-section-header>
-  <h3>Cornell University</h3>
-  <h5>Ithaca, NY 2005 - 2009</h5>
-  <p>
-    Bachelors of Science: Computer Science
-  </p>
+  <resume-subsection>
+    <resume-subsection-header>
+      Cornell University <small>Ithaca, NY</small> 
+    </resume-subsection-header>
+    <resume-subsection-subheader>August 2005 - May 2009</resume-subsection-subheader>
+    <p>
+      Bachelors of Science: Computer Science
+    </p>
+  </resume-subsection>
 </resume-section>
