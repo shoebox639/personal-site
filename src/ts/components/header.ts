@@ -1,7 +1,7 @@
 /// <reference path="../../../typings/tsd.d.ts" />
 
 import {Component, View} from 'angular2/angular2';
-import {RouterLink} from 'angular2/router';
+import {RouterLink, Router} from 'angular2/router';
 
 import {PageTitleService} from '../services/page-title-service';
 
@@ -16,7 +16,8 @@ import {Dropdown} from '../directives/dropdown';
   templateUrl: '/assets/html/header.html'
 })
 export class Header {
-  constructor(private pageTitleService: PageTitleService) {
+  constructor(private pageTitleService: PageTitleService, private router: Router) {
+    console.log(router);
   }
   
   get title() {
