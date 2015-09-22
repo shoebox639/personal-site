@@ -103,3 +103,50 @@ a .fa {
 section {
   margin-bottom: 75px;
 }
+
+at:after {
+  content: '@';
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 20px;
+  }
+  .container {
+    width: auto;
+    min-width: 750px;
+  }
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  h4, h5, h6 {
+    margin-top: 7px;
+    margin-bottom: 2px;
+  }
+  p {
+    margin-bottom: 2px;
+  }
+  .resume-header {
+    margin-bottom: 15px;
+  }
+}
