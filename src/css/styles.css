@@ -3,26 +3,16 @@ body {
   font-weight: 300;
 }
 
-.container {
-  -webkit-animation: fade-in 1s;
-  -moz-animation: fade-in 1s;
-  -o-animation: fade-in 1s;
-  -ms-animation: fade-in 1s;
-  animation: fade-in 1s;
-}
-
 .jumbotron {
   color: #ccc;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
   height: 600px;
-  -o-transition: background .5s ease-in-out;
-  -ms-transition: background .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out;
-  -webkit-transition: background .5s ease-in-out;
-  transition: background .5s ease-in-out;
+  -o-transition: background-image .5s ease-in-out;
+  -ms-transition: background-image .5s ease-in-out;
+  -moz-transition: background-image .5s ease-in-out;
+  -webkit-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
 
   -webkit-animation: fade-in 1s;
   -moz-animation: fade-in 1s;

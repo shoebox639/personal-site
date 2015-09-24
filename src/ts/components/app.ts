@@ -6,7 +6,6 @@ import {RouteConfig} from 'angular2/router';
 import {Header} from './header';
 import {Body} from './body';
 import {Footer} from './footer';
-import {ImagePreloader} from '../directives/image-preloader';
 
 import {ResumeView} from './pages/resume';
 import {ContactView} from './pages/contact';
@@ -17,7 +16,7 @@ import {HomeView} from './pages/home';
 })
 @View({
   templateUrl: '/assets/html/app.html',
-  directives: [Header, Body, Footer, ImagePreloader]
+  directives: [Header, Body, Footer]
 })
 @RouteConfig([
   { path: '/',        as: 'home',    component: HomeView },
