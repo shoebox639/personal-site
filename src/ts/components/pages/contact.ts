@@ -12,5 +12,6 @@ export class ContactView {
   constructor(pageTitleService: PageTitleService) {
     pageTitleService.title = 'Contact';
     pageTitleService.subTitle = '';
+    pageTitleService.background = 'contact';
   }
 }

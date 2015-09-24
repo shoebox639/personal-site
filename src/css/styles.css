@@ -26,11 +26,17 @@ body {
 .background-preload-1 {
   background: url('/assets/img/lines-of-code.jpg') no-repeat -9999px -9999px;
 }
+.background-preload-2 {
+  background: url('/assets/img/nyc-train.jpg') no-repeat -9999px -9999px;
+}
 .jumbotron.home {
   background-image: url('/assets/img/manhattan-skyline.jpg');
 }
 .jumbotron.resume {
   background-image: url('/assets/img/lines-of-code.jpg');
+}
+.jumbotron.contact {
+  background-image: url('/assets/img/nyc-train.jpg');
 }
 
 .jumbotron header {
