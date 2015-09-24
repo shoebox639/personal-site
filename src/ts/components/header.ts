@@ -18,38 +18,10 @@ import {Dropdown} from '../directives/dropdown';
   styles: [`
     .jumbotron {
       color: #ccc;
+      background-color: #111;
       background-position: center center;
       background-size: cover;
       height: 600px;
-      -o-transition: background-image .5s ease-in-out;
-      -ms-transition: background-image .5s ease-in-out;
-      -moz-transition: background-image .5s ease-in-out;
-      -webkit-transition: background-image .5s ease-in-out;
-
-      transition: background-image .5s ease-in-out;
-      -webkit-animation: fade-in 1s;
-      -moz-animation: fade-in 1s;
-      -o-animation: fade-in 1s;
-      -ms-animation: fade-in 1s;
-      animation: fade-in 1s;
-    }
-    .background-preload-0 {
-      background: url('/assets/img/manhattan-skyline.jpg') no-repeat -9999px -9999px;
-    }
-    .background-preload-1 {
-      background: url('/assets/img/lines-of-code.jpg') no-repeat -9999px -9999px;
-    }
-    .background-preload-2 {
-      background: url('/assets/img/nyc-train.jpg') no-repeat -9999px -9999px;
-    }
-    .jumbotron.home {
-      background-image: url('/assets/img/manhattan-skyline.jpg');
-    }
-    .jumbotron.resume {
-      background-image: url('/assets/img/lines-of-code.jpg');
-    }
-    .jumbotron.contact {
-      background-image: url('/assets/img/nyc-train.jpg');
     }
 
     .jumbotron header {
@@ -63,9 +35,18 @@ import {Dropdown} from '../directives/dropdown';
         margin-top: 100px;
       }
     }
+    
+    .jumbotron.home {
+      background-image: url('/assets/img/manhattan-skyline.jpg');
+    }
+    .jumbotron.resume {
+      background-image: url('/assets/img/lines-of-code.jpg');
+    }
+    .jumbotron.contact {
+      background-image: url('/assets/img/nyc-train.jpg');
+    }
 
-    .jumbotron h1,
-    .jumbotron h2 {
+    h1, h2 {
       font-weight: 300;
     }
 
@@ -77,7 +58,6 @@ import {Dropdown} from '../directives/dropdown';
       height: 600px;
       background-color: #000;
       opacity: 0.3;
-
     }
 
     header {

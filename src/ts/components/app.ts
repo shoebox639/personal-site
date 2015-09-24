@@ -1,7 +1,7 @@
 /// <reference path="../../../typings/tsd.d.ts" />
 
-import {Component, View, bootstrap} from 'angular2/angular2';
-import {RouteConfig} from 'angular2/router';
+import {Component, View} from 'angular2/angular2';
+import {RouteConfig, Router} from 'angular2/router';
 
 import {Header} from './header';
 import {Body} from './body';
@@ -24,6 +24,6 @@ import {HomeView} from './pages/home';
   { path: '/contact', as: 'contact', component: ContactView }
 ])
 export class App {
-  constructor() {
+  constructor(private router: Router) {
   }
 }

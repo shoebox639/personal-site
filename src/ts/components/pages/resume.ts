@@ -2,6 +2,7 @@
 
 import {Component, View, NgFor} from 'angular2/angular2';
 
+import {Page} from './page';
 import {PageTitleService} from '../../services/page-title-service';
 import {ResumeSection, ResumeSubsection} from '../resume-section';
 
@@ -30,8 +31,9 @@ export class ResumePrint {
   directives: [ResumeSection, ResumeSubsection, NgFor, ResumePrint],
   templateUrl: '/assets/html/pages/resume.html'
 })
-export class ResumeView {
+export class ResumeView extends Page {
   constructor(pageTitleService: PageTitleService) {
+    super();
     pageTitleService.title = 'My Resume';
     pageTitleService.subTitle = ``;
     pageTitleService.background = 'resume';
