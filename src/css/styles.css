@@ -20,6 +20,12 @@ body {
   -ms-animation: fade-in 1s;
   animation: fade-in 1s;
 }
+.background-preload-0 {
+  background: url('/assets/img/manhattan-skyline.jpg') no-repeat -9999px -9999px;
+}
+.background-preload-1 {
+  background: url('/assets/img/lines-of-code.jpg') no-repeat -9999px -9999px;
+}
 .jumbotron.home {
   background-image: url('/assets/img/manhattan-skyline.jpg');
 }
