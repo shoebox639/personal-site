@@ -1,9 +1,9 @@
-/// <reference path="../../typings/tsd.d.ts" />
+/// <reference path="../typings/tsd.d.ts" />
 
 import {bootstrap, bind, APP_COMPONENT} from 'angular2/angular2';
 import {RouteRegistry, Pipeline, Router, RootRouter, Location, LocationStrategy, PathLocationStrategy} from 'angular2/router';
 
-import {App} from './components/app';
+import {App} from './app/app';
 import {PageTitleService} from './services/page-title-service';
 
 let routerInjectables = [

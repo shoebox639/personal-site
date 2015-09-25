@@ -1,13 +1,13 @@
-/// <reference path="../../../../typings/tsd.d.ts" />
+/// <reference path="../../../typings/tsd.d.ts" />
 
 import {Component, View} from 'angular2/angular2';
 
-import {Page} from './page';
+import {Page} from '../page';
 import {PageTitleService} from '../../services/page-title-service';
 
 @Component({})
 @View({
-  templateUrl: '/assets/html/pages/home.html'
+  templateUrl: '/assets/pages/home/home.html'
 })
 export class HomeView extends Page {
   constructor(pageTitleService: PageTitleService) {

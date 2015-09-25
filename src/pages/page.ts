@@ -1,4 +1,4 @@
-/// <reference path="../../../../typings/tsd.d.ts" />
+/// <reference path="../../typings/tsd.d.ts" />
 
 import { OnDeactivate, OnActivate } from 'angular2/router';
 

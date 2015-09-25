@@ -1,4 +1,4 @@
-/// <reference path="../../../typings/tsd.d.ts" />
+/// <reference path="../../typings/tsd.d.ts" />
 
 import {Component, View} from 'angular2/angular2';
 
@@ -6,7 +6,8 @@ import {Component, View} from 'angular2/angular2';
   selector: 'app-footer'
 })
 @View({
-  templateUrl: '/assets/html/footer.html'
+  templateUrl: '/assets/footer/footer.html',
+  styleUrls: ['/assets/footer/footer.css']
 })
 export class Footer {
   constructor() {

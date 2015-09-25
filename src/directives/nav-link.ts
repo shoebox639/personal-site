@@ -1,10 +1,8 @@
-/// <reference path="../../../typings/tsd.d.ts" />
+/// <reference path="../../typings/tsd.d.ts" />
 
 import {Component, View, Attribute, NgClass} from 'angular2/angular2';
 
 import {RouterLink, Router} from 'angular2/router';
-
-import {App} from '../components/app';
 
 @Component({
   selector: '[nav-link]',

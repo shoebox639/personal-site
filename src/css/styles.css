@@ -95,21 +95,7 @@ body {
   color: #222;
 }
 
-footer.page-footer {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-a .fa {
-  color: #222;
-}
-
-a:hover .fa {
-  color: #999;
-}
-
-a,
-a .fa {
+a {
   -o-transition:.2s;
   -ms-transition:.2s;
   -moz-transition:.2s;
