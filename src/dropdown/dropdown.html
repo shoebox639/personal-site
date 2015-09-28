@@ -1,0 +1,6 @@
+<div (click)="toggle()">
+  <ng-content select="[dropdown-button]"></ng-content>
+</div>
+<div [hidden]="!menuVisible" (click)="reset()">
+  <ng-content select="[dropdown-menu]"></ng-content>
+</div>

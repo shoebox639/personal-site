@@ -5,8 +5,8 @@ import {RouterLink, Router} from 'angular2/router';
 
 import {PageTitleService} from '../services/page-title-service';
 
-import {NavLink} from '../directives/nav-link';
-import {Dropdown} from '../directives/dropdown';
+import {NavLink} from './nav/nav-link';
+import {Dropdown} from '../dropdown/dropdown';
 
 
 @Component({

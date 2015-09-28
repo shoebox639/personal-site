@@ -6,14 +6,7 @@ import {Component, Directive, View, Host} from 'angular2/angular2';
   selector: 'dropdown',
 })
 @View({
-  template: `
-    <div (click)="toggle()">
-      <ng-content select="[dropdown-button]"></ng-content>
-    </div>
-    <div [hidden]="!menuVisible" (click)="reset()">
-      <ng-content select="[dropdown-menu]"></ng-content>
-    </div>
-  `
+  templateUrl: '/assets/dropdown/dropdown.html' 
 })
 export class Dropdown {
   menuVisible: boolean;

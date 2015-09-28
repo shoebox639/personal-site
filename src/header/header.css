@@ -9,12 +9,25 @@
 .jumbotron header {
   margin-top: 150px;
 }
+.dark-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
 @media(max-width: 768px) {
   .jumbotron {
     height: 400px;
   }
   .jumbotron header {
     margin-top: 100px;
+  }
+  .dark-filter {
+    height: 400px;
   }
 }
 
@@ -32,15 +45,7 @@ h1, h2 {
   font-weight: 300;
 }
 
-.dark-filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 600px;
-  background-color: #000;
-  opacity: 0.3;
-}
+
 
 header {
   position: relative;
