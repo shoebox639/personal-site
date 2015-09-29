@@ -103,10 +103,6 @@ a {
   transition:.2s;
 }
 
-section {
-  margin-bottom: 75px;
-}
-
 at:after {
   content: '@';
 }
