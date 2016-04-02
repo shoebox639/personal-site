@@ -1,20 +1,17 @@
-/// <reference path="../../../typings/tsd.d.ts" />
-
-import {Component, View} from 'angular2/angular2';
+import {Component} from 'angular2/core';
 
 import {Page} from '../page';
 import {PageTitleService} from '../../services/page-title-service';
 
-@Component({})
-@View({
-  templateUrl: '/assets/pages/contact/contact.html',
-  styleUrls: ['/assets/pages/contact/contact.css']
+@Component({
+  templateUrl: 'assets/pages/contact/contact.html',
+  styleUrls: ['assets/pages/contact/contact.css']
 })
 export class ContactView extends Page {
   constructor(pageTitleService: PageTitleService) {
-    super();
-    pageTitleService.title = 'Contact';
-    pageTitleService.subTitle = '';
-    pageTitleService.background = 'contact';
+  super();
+  pageTitleService.title = 'Contact';
+  pageTitleService.subTitle = '';
+  pageTitleService.background = 'contact';
   }
 }

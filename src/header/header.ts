@@ -1,25 +1,18 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
-import {Component, View, NgStyle} from 'angular2/angular2';
-import {RouterLink, Router} from 'angular2/router';
+import {Component} from 'angular2/core';
+import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {PageTitleService} from '../services/page-title-service';
 
-import {NavLink} from './nav/nav-link';
 import {Dropdown} from '../dropdown/dropdown';
 
-
 @Component({
-  selector: 'app-header'
-})
-@View({
-  directives: [RouterLink, NavLink, Dropdown],
-  templateUrl: '/assets/header/header.html',
-  styleUrls: ['/assets/header/header.css']
+  selector: 'app-header',
+  directives: [Dropdown, ROUTER_DIRECTIVES],
+  templateUrl: 'assets/header/header.html',
+  styleUrls: ['assets/header/header.css'],
 })
 export class Header {
-  constructor(private pageTitleService: PageTitleService) {
-  }
+  constructor(private pageTitleService: PageTitleService) { }
   
   get title() {
     return this.pageTitleService.title;

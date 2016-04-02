@@ -1,9 +1,9 @@
-/// <reference path="../../typings/tsd.d.ts" />
+import {Injectable} from 'angular2/core';
 
+
+@Injectable()
 export class PageTitleService {
-  title: string;
-  subTitle: string;
-  background: string;
-  constructor() {
-  }
+  public title: string;
+  public subTitle: string;
+  public background: string;
 }

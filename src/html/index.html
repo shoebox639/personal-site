@@ -1,32 +1,46 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Shu Song, Software Engineer</title>
+    <title>Shu Song, Software Engineer</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet" type="text/css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/print.css" rel="stylesheet" type="text/css">
 
-        <script src="http://cdn.rawgit.com/google/traceur-compiler/90da568c7aa8e53ea362db1fc211fbb4f65b5e94/bin/traceur-runtime.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/systemjs/0.18.4/system.src.js"></script>
-        <script>
-          System.config({
-            defaultJSExtensions: true 
-          });
-        </script>
-        <script src="https://code.angularjs.org/2.0.0-alpha.37/angular2.dev.js"></script>
-        <script src="https://code.angularjs.org/2.0.0-alpha.37/router.dev.js"></script>
-        
-        <base href="/"></base>
-    </head>
-    <body>
-        <app></app>
-        <script>
-            System.import('/assets/build/bootstrap');
-        </script>
-        
-    </body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/print.css" rel="stylesheet" type="text/css">
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node/es6-shim/es6-shim.min.js"></script>
+    <script src="node/systemjs/dist/system-polyfills.js"></script>
+    <script src="node/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+
+    <script src="node/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node/systemjs/dist/system.src.js"></script>
+    <script src="node/rxjs/bundles/Rx.js"></script>
+    <script src="node/angular2/bundles/angular2.dev.js"></script>
+    <script src="node/angular2/bundles/router.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {    
+          'assets/build': {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('assets/build/bootstrap')
+        .then(null, console.error.bind(console));
+    </script>
+    
+    <base href="/"></base>
+  </head>
+  <body>
+    <app></app>
+    
+  </body>
 </html>

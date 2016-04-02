@@ -1,14 +1,12 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import { OnDeactivate, OnActivate } from 'angular2/router';
 
 export class Page implements OnDeactivate, OnActivate {
-  onDeactivate() {
+  routerOnDeactivate() {
     return new Promise((resolve, reject) => {
       setTimeout(resolve, 300);
     });
   }
 
-  onActivate() {
+  routerOnActivate() {
   }
 }

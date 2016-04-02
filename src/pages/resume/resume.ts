@@ -1,6 +1,4 @@
-/// <reference path="../../../typings/tsd.d.ts" />
-
-import {Component, View, NgFor} from 'angular2/angular2';
+import {Component} from 'angular2/core';
 
 import {Page} from '../page';
 import {PageTitleService} from '../../services/page-title-service';
@@ -10,9 +8,7 @@ import {jobs, skillCategories} from '../../data/resume-data';
 
 
 @Component({
-  selector: 'resume-print'
-})
-@View({
+  selector: 'resume-print',
   template: `
     <a class="btn btn-default" (click)="print()">
       <span class="glyphicon glyphicon-print"></span>
@@ -26,16 +22,15 @@ export class ResumePrint {
   }
 }
 
-@Component({})
-@View({
-  directives: [ResumeSection, ResumeSubsection, NgFor, ResumePrint],
+@Component({
+  directives: [ResumeSection, ResumeSubsection, ResumePrint],
   templateUrl: '/assets/pages/resume/resume.html'
 })
 export class ResumeView extends Page {
-  constructor(pageTitleService: PageTitleService) {
+  constructor(private pageTitleService: PageTitleService) {
     super();
     pageTitleService.title = 'My Resume';
-    pageTitleService.subTitle = ``;
+    pageTitleService.subTitle = 'Be the changeset that you want to see in the world';
     pageTitleService.background = 'resume';
   }
 

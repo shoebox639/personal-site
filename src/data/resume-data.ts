@@ -11,13 +11,15 @@ export class Job {
 
 export var jobs: Job[] = [
   new Job(
-    'Yodle',
+    'Yodle (Web.com starting March 2015)',
     'Lead Software Engineer',
     'New York, NY',
     'June 2015 - present',
     [
-      `Implementing new front end architecture that easily shares web components and communicates with the backend using a REST API.`,
-      `Established front end programming best practices as part of front end guild.`,
+      `Created library that creates a single REST API interface that proxies API calls across numerous microservices and materializes data.`,
+      `Created dependency-free library to kickstart micro UI projects.`,
+      `Implemented new front end architecture that easily shares web components and communicates with the backend using a REST API.`,
+      `Established front end programming best practices.`,
     ]
   ),
   new Job(
@@ -67,15 +69,15 @@ export class SkillCategory {
 export var skillCategories: SkillCategory[] = [
   new SkillCategory(
     'Languages',
-    ['Java', 'JavaScript', 'Scala', 'Ruby', 'HTML', 'CSS3', 'ES6', 'TypeScript']
+    ['JavaScript', 'ES6', 'Java', 'Scala', 'Ruby', 'HTML', 'CSS3', 'TypeScript']
   ),
   new SkillCategory(
     'Frontend',
-    ['Angular', 'RequireJs', 'jQuery', 'Express', 'Bootstrap', 'UI Bootstrap', 'Rails']
+    ['Angular', 'RequireJs', 'jQuery', 'Bootstrap', 'UI Bootstrap']
   ),
   new SkillCategory(
     'Backend',
-    ['Node', 'CommonJs', 'Spring', 'Play Framework', 'JSP', 'Gulp', 'SBT', 'Thrift', 'Hadoop', 'Scalding', 'Hibernate', 'Spring Boot', 'Spring MVC']
+    ['Node', 'Gulp', 'Express', 'Play Framework', 'Rails', 'SBT', 'Spring', 'JSP', 'Thrift', 'Hadoop', 'Scalding', 'Hibernate', 'Spring Boot', 'Spring MVC']
   ),
   new SkillCategory(
     'Testing',

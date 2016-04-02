@@ -8,7 +8,8 @@ app.use(compression());
 app.use('/assets/build', express.static(__dirname + '/build'));
 app.use('/assets/src', express.static(__dirname + '/src'));
 app.use('/assets', express.static(__dirname + '/src'));
-app.use('/vendor', express.static(__dirname + '/bower_components'));
+app.use('/bower', express.static(__dirname + '/bower_components'));
+app.use('/node', express.static(__dirname + '/node_modules'));
 
 var validPaths = ['about', 'resume', 'contact'];
 

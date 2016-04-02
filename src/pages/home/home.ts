@@ -1,16 +1,13 @@
-/// <reference path="../../../typings/tsd.d.ts" />
-
-import {Component, View} from 'angular2/angular2';
+import {Component} from 'angular2/core';
 
 import {Page} from '../page';
 import {PageTitleService} from '../../services/page-title-service';
 
-@Component({})
-@View({
-  templateUrl: '/assets/pages/home/home.html'
+@Component({
+  templateUrl: '/assets/pages/home/home.html',
 })
 export class HomeView extends Page {
-  constructor(pageTitleService: PageTitleService) {
+  constructor(private pageTitleService: PageTitleService) {
     super();
     pageTitleService.title = 'Shu Song';
     pageTitleService.subTitle = 'Building Software';

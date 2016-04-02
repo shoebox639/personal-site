@@ -1,10 +1,10 @@
-/// <reference path="../../typings/tsd.d.ts" />
+import {Component} from 'angular2/core';
 
-import {Component, View} from 'angular2/angular2';
-import {RouteConfig, Router} from 'angular2/router';
+import {RouteConfig, RouterOutlet, ROUTER_DIRECTIVES} from 'angular2/router';
+
+import {PageTitleService} from '../services/page-title-service';
 
 import {Header} from '../header/header';
-import {Body} from '../body/body';
 import {Footer} from '../footer/footer';
 
 import {ResumeView} from '../pages/resume/resume';
@@ -12,18 +12,19 @@ import {ContactView} from '../pages/contact/contact';
 import {HomeView} from '../pages/home/home';
 
 @Component({
-  selector: 'app'
-})
-@View({
+  selector: 'app',
   templateUrl: '/assets/app/app.html',
-  directives: [Header, Body, Footer]
+  providers: [PageTitleService],
+  directives: [Header, Footer, RouterOutlet, ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  { path: '/', as: 'home', component: HomeView },
-  { path: '/resume', as: 'resume', component: ResumeView },
-  { path: '/contact', as: 'contact', component: ContactView }
+  { path: '/', name: 'Home', component: HomeView },
+  { path: '/resume', name: 'Resume', component: ResumeView },
+  { path: '/contact', name: 'Contact', component: ContactView },
 ])
 export class App {
-  constructor(private router: Router) {
+  private yolo = 3;
+  private router = {};
+  constructor() {
   }
 }

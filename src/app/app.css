@@ -1,0 +1,51 @@
+.jumbotron {
+  color: #ccc;
+  background-color: #111;
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotron header {
+  margin-top: 150px;
+}
+.dark-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+@media(max-width: 768px) {
+  .jumbotron {
+  height: 400px;
+  }
+  .jumbotron header {
+  margin-top: 100px;
+  }
+  .dark-filter {
+  height: 400px;
+  }
+}
+
+.jumbotron.home {
+  background-image: url('/assets/img/manhattan-skyline.jpg');
+}
+.jumbotron.resume {
+  background-image: url('/assets/img/lines-of-code.jpg');
+}
+.jumbotron.contact {
+  background-image: url('/assets/img/nyc-train.jpg');
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+header {
+  position: relative;
+}
+

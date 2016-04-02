@@ -1,5 +1,7 @@
 <div class="content" [class.transparent]="router.navigating">
   <app-header></app-header>
-  <app-body></app-body>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
   <app-footer></app-footer>
 </div>

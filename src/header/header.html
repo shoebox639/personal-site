@@ -1,33 +1,31 @@
 <div class="background-preload-0 background-preload-1"></div>
 <div class="jumbotron {{background}} hidden-print">
   <div class="dark-filter"></div>
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <dropdown class="dropdown pull-right visible-xs-block">
-            <button dropdown-button class="nav navbar-toggle">
-              <span class="glyphicon glyphicon-menu-hamburger"></span>
-            </button>
-            <ul dropdown-menu class="dropdown-menu">
-              <li nav-link route="home">Home</li>
-              <li nav-link route="resume">Resume</li>
-              <li nav-link route="contact">Contact</li>
-            </ul>
-          </dropdown>
-          
-          <div class="navbar-brand">
-            <strong>&lt;ss&gt;</strong>
-          </div>
-        </div>
-        <ul class="nav navbar-nav navbar-right hidden-xs">
-          <li nav-link route="home">Home</li>
-          <li nav-link route="resume">Resume</li>
-          <li nav-link route="contact">Contact</li>
-        </ul>
+  <nav class="navbar container">
+    <div class="navbar-header">
+      <dropdown class="dropdown pull-right visible-xs-block">
+      <button dropdown-button class="nav navbar-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <ul dropdown-menu class="dropdown-menu">
+        <li><a [routerLink]="['Home']">Home</a></li>
+        <li><a [routerLink]="['Resume']">Resume</a></li>
+        <li><a [routerLink]="['Contact']">Contact</a></li>
+      </ul>
+      </dropdown>
+      
+      <div class="navbar-brand">
+      <strong>&lt;ss&gt;</strong>
       </div>
-    </nav>
-    <header class="text-center">
-      <h1>{{title}}</h1>
-      <h2>{{subTitle}}</h2>
-    </header>
+    </div>
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li><a [routerLink]="['Home']">Home</a></li>
+      <li><a [routerLink]="['Resume']">Resume</a></li>
+      <li><a [routerLink]="['Contact']">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="text-center">
+    <h1>{{title}}</h1>
+    <h2>{{subTitle}}</h2>
+  </header>
 </div>

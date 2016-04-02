@@ -10,38 +10,38 @@
 </div>
 <resume-section>
   <resume-section-header>Skills</resume-section-header>
-  <resume-subsection *ng-for="#category of skillCategories">
-    <resume-subsection-header> {{category.name}} </resume-subsection-header>
-    <p>
-      <span *ng-for="#skill of category.skills; #i=index">
-        {{skill}}<span [hidden]="i >= category.skills.length - 1">,</span>
-      </span>
-    </p>
+  <resume-subsection *ngFor="#category of skillCategories">
+  <resume-subsection-header> {{category.name}} </resume-subsection-header>
+  <p>
+    <span *ngFor="#skill of category.skills; #i=index">
+    {{skill}}<span [hidden]="i >= category.skills.length - 1">,</span>
+    </span>
+  </p>
   </resume-subsection>
 </resume-section>
 
 <resume-section>
   <resume-section-header>Experience</resume-section-header>
-  <resume-subsection *ng-for="#job of jobs">
-    <resume-subsection-header>
-      {{job.company}} <small>{{job.location}}</small>
-    </resume-subsection-header>
-    <resume-subsection-subheader>{{job.position}}, {{job.period}} </resume-subsection-subheader>
-    <p *ng-for="#accomplishment of job.accomplishments">
-      {{accomplishment}}
-    </p>
+  <resume-subsection *ngFor="#job of jobs">
+  <resume-subsection-header>
+    {{job.company}} <small>{{job.location}}</small>
+  </resume-subsection-header>
+  <resume-subsection-subheader>{{job.position}}, {{job.period}} </resume-subsection-subheader>
+  <p *ngFor="#accomplishment of job.accomplishments">
+    {{accomplishment}}
+  </p>
   </resume-subsection>
 </resume-section>
 
 <resume-section>
   <resume-section-header>Education</resume-section-header>
   <resume-subsection>
-    <resume-subsection-header>
-      Cornell University <small>Ithaca, NY</small> 
-    </resume-subsection-header>
-    <resume-subsection-subheader>August 2005 - May 2009</resume-subsection-subheader>
-    <p>
-      Bachelors of Science: Computer Science
-    </p>
+  <resume-subsection-header>
+    Cornell University <small>Ithaca, NY</small> 
+  </resume-subsection-header>
+  <resume-subsection-subheader>August 2005 - May 2009</resume-subsection-subheader>
+  <p>
+    Bachelors of Science: Computer Science
+  </p>
   </resume-subsection>
 </resume-section>

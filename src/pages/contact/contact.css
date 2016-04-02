@@ -6,12 +6,12 @@ img {
 
 @media(max-width: 768px) {
   img {
-    width: 200px;
-    min-width: none;
-    margin-top: 30px;
+  width: 200px;
+  min-width: none;
+  margin-top: 30px;
   }
 
   .contact {
-    text-align: center;
+  text-align: center;
   }
 }

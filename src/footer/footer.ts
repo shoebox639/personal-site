@@ -1,13 +1,9 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
-import {Component, View} from 'angular2/angular2';
+import {Component} from 'angular2/core';
 
 @Component({
-  selector: 'app-footer'
-})
-@View({
-  templateUrl: '/assets/footer/footer.html',
-  styleUrls: ['/assets/footer/footer.css']
+  selector: 'app-footer',
+  templateUrl: 'assets/footer/footer.html',
+  styleUrls: ['assets/footer/footer.css']
 })
 export class Footer {
   constructor() {
