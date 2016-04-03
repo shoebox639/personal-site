@@ -30,7 +30,7 @@ export class ResumeView extends Page {
   constructor(private pageTitleService: PageTitleService) {
     super();
     pageTitleService.title = 'My Resume';
-    pageTitleService.subTitle = 'Be the changeset that you want to see in the world';
+    pageTitleService.subTitle = '';
     pageTitleService.background = 'resume';
   }
 
