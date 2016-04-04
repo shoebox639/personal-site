@@ -4,8 +4,8 @@ import {Page} from '../page';
 import {PageTitleService} from '../../services/page-title-service';
 
 @Component({
-  templateUrl: 'assets/pages/contact/contact.html',
-  styleUrls: ['assets/pages/contact/contact.css']
+  templateUrl: '/assets/app/pages/contact/contact.html',
+  styleUrls: ['assets/app/pages/contact/contact.css']
 })
 export class ContactView extends Page {
   constructor(pageTitleService: PageTitleService) {

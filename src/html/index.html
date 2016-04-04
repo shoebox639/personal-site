@@ -7,33 +7,33 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="/assets/css/print.css" rel="stylesheet" type="text/css">
+    <link href="/assets/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/assets/app/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="/assets/app/css/print.css" rel="stylesheet" type="text/css">
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
-    <script src="node/es6-shim/es6-shim.min.js"></script>
-    <script src="node/systemjs/dist/system-polyfills.js"></script>
-    <script src="node/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+    <script src="/assets/node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="/assets/node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="/assets/node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
 
-    <script src="node/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node/systemjs/dist/system.src.js"></script>
-    <script src="node/rxjs/bundles/Rx.js"></script>
-    <script src="node/angular2/bundles/angular2.dev.js"></script>
-    <script src="node/angular2/bundles/router.dev.js"></script>
+    <script src="/assets/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/assets/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="/assets/node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="/assets/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="/assets/node_modules/angular2/bundles/router.dev.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
         packages: {    
-          'assets/build': {
+          'assets/app': {
             format: 'register',
             defaultExtension: 'js'
           }
         }
       });
-      System.import('assets/build/bootstrap')
+      System.import('assets/app/bootstrap')
         .then(null, console.error.bind(console));
     </script>
     

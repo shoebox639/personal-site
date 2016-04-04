@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 
-import {RouteConfig, RouterOutlet, ROUTER_DIRECTIVES} from 'angular2/router';
+import {RouteConfig, RouterOutlet, ROUTER_DIRECTIVES, Router} from 'angular2/router';
 
 import {PageTitleService} from '../services/page-title-service';
 
@@ -13,7 +13,7 @@ import {HomeView} from '../pages/home/home';
 
 @Component({
   selector: 'app',
-  templateUrl: '/assets/app/app.html',
+  templateUrl: '/assets/app/app/app.html',
   providers: [PageTitleService],
   directives: [Header, Footer, RouterOutlet, ROUTER_DIRECTIVES]
 })
@@ -23,8 +23,6 @@ import {HomeView} from '../pages/home/home';
   { path: '/contact', name: 'Contact', component: ContactView },
 ])
 export class App {
-  private yolo = 3;
-  private router = {};
-  constructor() {
+  constructor(private router: Router) {
   }
 }

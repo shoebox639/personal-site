@@ -2,7 +2,7 @@ import {Component, Directive, Host} from 'angular2/core';
 
 @Component({
   selector: 'dropdown',
-  templateUrl: '/assets/dropdown/dropdown.html' 
+  templateUrl: '/assets/app/dropdown/dropdown.html' 
 })
 export class Dropdown {
   menuVisible: boolean;

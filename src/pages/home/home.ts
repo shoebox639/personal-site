@@ -4,7 +4,7 @@ import {Page} from '../page';
 import {PageTitleService} from '../../services/page-title-service';
 
 @Component({
-  templateUrl: '/assets/pages/home/home.html',
+  templateUrl: '/assets/app/pages/home/home.html',
 })
 export class HomeView extends Page {
   constructor(private pageTitleService: PageTitleService) {

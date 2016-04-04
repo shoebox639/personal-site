@@ -32,13 +32,13 @@
 }
 
 .jumbotron.home {
-  background-image: url('/assets/img/manhattan-skyline.jpg');
+  background-image: url('/assets/app/img/manhattan-skyline.jpg');
 }
 .jumbotron.resume {
-  background-image: url('/assets/img/lines-of-code.jpg');
+  background-image: url('/assets/app/img/lines-of-code.jpg');
 }
 .jumbotron.contact {
-  background-image: url('/assets/img/nyc-train.jpg');
+  background-image: url('/assets/app/img/nyc-train.jpg');
 }
 
 h1, h2 {
@@ -47,6 +47,15 @@ h1, h2 {
 
 header {
   position: relative;
+}
+
+.navbar-brand a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.navbar-brand a:hover {
+  color: #eee;
 }
 
 .nav > li > a {

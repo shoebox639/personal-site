@@ -8,8 +8,8 @@ import {Dropdown} from '../dropdown/dropdown';
 @Component({
   selector: 'app-header',
   directives: [Dropdown, ROUTER_DIRECTIVES],
-  templateUrl: 'assets/header/header.html',
-  styleUrls: ['assets/header/header.css'],
+  templateUrl: '/assets/app/header/header.html',
+  styleUrls: ['assets/app/header/header.css'],
 })
 export class Header {
   constructor(private pageTitleService: PageTitleService) { }

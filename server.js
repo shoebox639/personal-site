@@ -5,18 +5,16 @@ var app = express();
 
 app.use(compression());
 
-app.use('/assets/build', express.static(__dirname + '/build'));
-app.use('/assets/src', express.static(__dirname + '/src'));
-app.use('/assets', express.static(__dirname + '/src'));
-app.use('/bower', express.static(__dirname + '/bower_components'));
-app.use('/node', express.static(__dirname + '/node_modules'));
+app.use('/assets/node_modules', express.static(__dirname + '/node_modules'));
+app.use('/assets/bower_components', express.static(__dirname + '/bower_components'));
+app.use('/assets', express.static(__dirname + '/build'));
 
 var validPaths = ['about', 'resume', 'contact'];
 
 app.get('/:path?', function(req, res, next) {
   var path = req.params.path;
   if (!path || validPaths.indexOf(path) > -1) {
-    res.sendFile(__dirname + '/src/html/index.html');
+    res.sendFile(__dirname + '/build/app/html/index.html');
   }
   else {
     next();

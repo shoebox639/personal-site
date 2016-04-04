@@ -24,7 +24,7 @@ export class ResumePrint {
 
 @Component({
   directives: [ResumeSection, ResumeSubsection, ResumePrint],
-  templateUrl: '/assets/pages/resume/resume.html'
+  templateUrl: '/assets/app/pages/resume/resume.html'
 })
 export class ResumeView extends Page {
   constructor(private pageTitleService: PageTitleService) {
