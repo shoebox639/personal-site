@@ -11,7 +11,7 @@ export class Job {
 
 export var jobs: Job[] = [
   new Job(
-    'Yodle (Web.com starting March 2015)',
+    'Yodle',
     'Lead Software Engineer',
     'New York, NY',
     'June 2015 - present',
