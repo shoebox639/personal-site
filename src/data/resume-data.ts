@@ -11,10 +11,17 @@ export class Job {
 
 export var jobs: Job[] = [
   new Job(
+    'OrderGroove',
+    'Lead Front End Engineer',
+    'New York, NY',
+    'June 2016 - present',
+    []
+  ),
+  new Job(
     'Yodle',
     'Lead Software Engineer',
     'New York, NY',
-    'June 2015 - present',
+    'June 2015 - May 2016',
     [
       `Created library that creates a single REST API interface that proxies API calls across numerous microservices and materializes data.`,
       `Created dependency-free library to kickstart micro UI projects.`,
