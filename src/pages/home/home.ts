@@ -5,6 +5,7 @@ import {PageTitleService} from '../../services/page-title-service';
 
 @Component({
   templateUrl: '/assets/app/pages/home/home.html',
+  styleUrls: ['assets/app/pages/home/home.css']
 })
 export class HomeView extends Page {
   constructor(private pageTitleService: PageTitleService) {

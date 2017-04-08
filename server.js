@@ -21,6 +21,8 @@ app.get('/:path?', (req, res, next) => {
   }
 });
 
+app.post('')
+
 app.use((req, res, next) => {
   res.status(404);
   res.send('Page not found');

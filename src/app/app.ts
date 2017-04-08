@@ -19,8 +19,7 @@ import {HomeView} from '../pages/home/home';
 })
 @RouteConfig([
   { path: '/', name: 'Home', component: HomeView },
-  { path: '/resume', name: 'Resume', component: ResumeView },
-  { path: '/contact', name: 'Contact', component: ContactView },
+  { path: '/resume', name: 'Resume', component: ResumeView }
 ])
 export class App {
   constructor(private router: Router) {

@@ -8,22 +8,7 @@ import {jobs, skillCategories} from '../../data/resume-data';
 
 
 @Component({
-  selector: 'resume-print',
-  template: `
-    <a class="btn btn-default" (click)="print()">
-      <span class="glyphicon glyphicon-print"></span>
-      Print
-    </a>
-  `
-})
-export class ResumePrint {
-  print() {
-    window.print();
-  }
-}
-
-@Component({
-  directives: [ResumeSection, ResumeSubsection, ResumePrint],
+  directives: [ResumeSection, ResumeSubsection],
   templateUrl: '/assets/app/pages/resume/resume.html'
 })
 export class ResumeView extends Page {
@@ -37,7 +22,7 @@ export class ResumeView extends Page {
   get jobs() {
     return jobs;
   }
-  
+
   get skillCategories() {
     return skillCategories;
   }
